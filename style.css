@@ -15,19 +15,23 @@ height: 100%;
     height: 100px;
 display: flex;
 }
+.nav img{
+    margin-left: 20px;
+}
 
 .Name{
     
-    margin-left: 20px;
+    margin-left: 15px;
     color: white;
     font-size: 40px;
-    color: rgb(255,58,123);
-   color: linear-gradient(90deg, rgba(255,58,123,1) 10%, rgba(0,122,255,1) 100%);
+   color:goldenrod;
     display: flex;
-    padding-top: 20px;
+    padding-top: 25px;
   
 }
-
+.Name:hover{
+    color: rgb(255,58,123);
+}
 .list
 {
     color: white;
@@ -46,7 +50,10 @@ display: flex;
 
 .list li a:hover{
  text-decoration: underline;
- color: white;
+ 
+ background: rgb(255,58,123);
+ background: linear-gradient(90deg, rgba(255,58,123,1) 10%, rgba(0,122,255,1) 100%);
+ border-radius: 50%;
 }
 
 .SUB
@@ -157,6 +164,7 @@ text-align: center;
 border-radius: 10%;
 }
 
+
 .mission1
 {
  padding-top: 50px;
@@ -166,7 +174,7 @@ border-radius: 10%;
 margin-left: 45px;
     width: 80%;
     background-color: rgb(95, 160, 108);
-   
+ 
     
 }
 
@@ -198,6 +206,7 @@ margin-bottom:30px;
 .mission1:hover{
     background-color: black;
     color: white;
+    text-decoration: none;
 }
 .vision1:hover{
     background-color: black;
@@ -244,70 +253,5 @@ iframe
 {
     margin-left: 10%;
     margin-top: 10%;
-}
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .list li a {
-        padding: 10px;
-    }
-
-    .continer, .container2 {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img, .Login {
-        width: 90%;
-    }
-
-    .mission, .vision, .value {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .foot, .tech {
-        margin-left: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .Name {
-        font-size: 30px;
-    }
-
-    .list {
-        font-size: 16px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    .mission, .vision, .value {
-        width: 100%;
-    }
-
-    iframe {
-        height: 300px;
-    }
 }
 
